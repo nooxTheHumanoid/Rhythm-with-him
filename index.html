@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="something.js" defer></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rhythm with him</title>
+</head>
+<body>
+    
+    <!-- <input type="range" min="0.25" max="5" value="1" class="slider" id="SSmulti" step="0.25"> -->
+    <audio id="TSongI">
+        <source src="Music/Tutorial/Inst.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="TSongV">
+        <source src="Music/Tutorial/Voices.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="ISongI">
+        <source src="Music/Infection/Inst.ogg" type="audio/ogg"> 
+    </audio>
+    <audio id="ISongV">
+        <source src="Music/Infection/Voices.ogg" type="audio/ogg">
+    </audio>
+    <audio id="ATSongI">
+        <source src="Music/AcidTalk/Inst.ogg" type="audio/ogg"> 
+    </audio>    
+    <audio id="ATSongV">
+        <source src="Music/AcidTalk/Voices.ogg" type="audio/ogg">
+    </audio>
+    <audio id="TestSongI">
+        <source src="Music/Test/Inst.ogg" type="audio/ogg"> 
+    </audio>
+    <audio id="TestSongV">
+        <source src="Music/Test/Voices.ogg" type="audio/ogg"> 
+    </audio>
+    <audio id="ABSongV">
+        <source src="Music/AcidicBackstory/Voices.ogg" type="audio/ogg">
+    </audio>
+    <audio id="ABSongI">
+        <source src="Music/AcidicBackstory/Inst.ogg" type="audio/ogg"> 
+    </audio>
+    <audio id="YMMSV">
+        <source src="Music/YMMS/Voices.ogg" type="audio/ogg">
+    </audio>
+    <audio id="YMMSI">
+        <source src="Music/YMMS/Inst.ogg" type="audio/ogg"> 
+    </audio>
+    <div class="container">
+        <div class="main">
+            
+            <div class="CaPaH">
+                <div class="songselect">
+                    <h1>Song selection</h1>
+                    <select name="songs" id="song-select" onchange="checkselected()">
+                    <option value="Tutorial">Tutorial (TimeVar)</option>
+                    <option value="YMMS">You Make Me Stab (nooxie's lab)</option>
+                    <option value="AcidBack">Acidic backstory (nooxie's lab) (fnf mix)</option>
+                    <option value="Infected">Resist Infection (nooxie's lab) (fnf mix)</option>
+                    <option value="Test">Test (Friday Night Funkin')</option>
+                    <option value="AcidTalk">Acid Talk (Rhythm with him mix)</option>
+                    </select>
+                    <h1>Song info</h1>
+                    <h2 id="difficulty">Easy</h2>
+                    <h2 id="songbpm">BPM: 75</h2>
+                    <h2 id="songlength">Length: 0:15</h2>
+                    <button onclick="main()" id="playbutton">Play</button>
+                    <h1>Modifiers</h1>
+                    <p id="HTGShow">Heat gain: 1x</p>
+                    <input type="range" min="0.25" max="5" value="1" class="slider" id="HeatGain" step="0.25" onchange="modifiers()">
+                    <p id="HTDShow">Heat drain: 1x</p>
+                    <input type="range" min="0.25" max="3" value="1" class="slider" id="HeatDrain" step="0.25" onchange="modifiers()">
+                    <p id="HPGShow">Health regen: 1x</p>
+                    <input type="range" min="0.25" max="10" value="1" class="slider" id="HealthGain" step="0.25" onchange="modifiers()">
+                    <p id="HPDShow">Health drain: 1x</p>
+                    <input type="range" min="0.25" max="5" value="1" class="slider" id="HealthDrain" step="0.25" onchange="modifiers()">
+                    <p id="IGShow">Ice gain: 1x</p>
+                    <input type="range" min="0.25" max="5" value="1" class="slider" id="IceGain" step="0.25" onchange="modifiers()">
+                    <p>Passive Ice melting:</p>
+                    <input type="checkbox" id="PassiveIceMelt" onclick="modifiers()">
+                </div>
+                <div class="stats">
+                    <div class="statinfo">
+                <h2 id="ok">Score: 0</h2>
+                <h2 id="misses">Misses: 0</h2>
+                <h2 id="hit">Hits: 0</h2>
+                <h2 id="combo">Combo: 0</h2>
+                <h2 id="HIcombo">Highest Combo: 0</h2>
+                <h2 id="Goods">Goods: 0</h2>
+                <h2 id="Perfects">Perfects: 0</h2>
+                </div>
+                    <div class="info">
+                        <h1>Info</h1>
+                        <br>
+                        <h2>Heat:</h2> <p>You gain heat upon hitting a note perfect note hits give you more heat. Heat gives you more score and makes you take less damage upon missing. Max heat removes all Ice</p>
+                        <br>
+                        <h2>Ice:</h2><p>You gain ice upon missing. The more ice you have the less healing you have.</p>
+                        <p>When the notes stop or you beat the song please refresh the page</p>
+                    </div>
+            </div>
+            <div class="CurruptMeter">
+                <div class="BGCurrupt"><div class='Bar' id="Corrupt">Ice</div></div>
+            </div>
+            <div class="playspace">
+                <div id="left">
+                    
+                </div>
+                <div id="down">
+
+                </div>
+                <div id="up">
+
+                </div>
+                <div id="right">
+
+                </div>
+                <img id="ratinghit" src="nothing.png" style="position: absolute; height:50px; width:180px; transform: translateX(12.5px) translateY(390px);">
+                <div class="hitleft">
+                    
+                    <h1>D</h1>
+                </div>
+                <div class="hitdown">
+                    <h1>F</h1>
+                </div>
+                <div class="hitup">
+                    <h1>J</h1>
+                </div>
+                <div class="hitright">
+                    <h1>K</h1>
+                </div>
+            </div>
+        <div class="sideinfo">
+            <div class="BGHeat"><div class='Bar' id="Heat">Heat</div>
+        </div>
+        </div>
+        <div class="HPandS">
+            </div></div>
+            <div class="BGBar"><div class="Bar" id="PlayerHP">
+                <img src="Icon/Player.png" style="height: 40px; width: 40px">
+            </div></div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

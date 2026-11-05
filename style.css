@@ -1,0 +1,109 @@
+body {
+    background-color: green;
+    justify-items: center;
+}
+.playspace{
+    display: grid;
+    background-color: lightgreen;
+    border: solid, 2px, black;
+    width:200px;
+    height: 500px;
+    grid-template-rows: 450px 50px;
+    grid-template-columns: 50px 50px 50px 50px;
+    overflow: hidden;
+}
+.hitleft {
+    background-color: rgb(85, 85, 85);
+    border: solid, 2px, black;
+    align-content: center;
+    text-align: center;
+}
+.hitdown {
+    background-color: rgb(85, 85, 85);
+    border: solid, 2px, black;
+    align-content: center;
+    text-align: center;
+}
+.hitup {
+    background-color: rgb(85, 85, 85);
+    border: solid, 2px, black;
+    align-content: center;
+    text-align: center;
+}
+.hitright {
+    background-color: rgb(85, 85, 85);
+    border: solid, 2px, black;
+    align-content: center;
+    text-align: center;
+}
+h1, p, h2{
+    margin: 0;
+    padding: 0;
+}
+.Bar {
+  text-align: right;
+  color: white;
+}
+#PlayerHP {width: 50%; background-color: #04AA6D; }
+.BGBar {
+  width: 100%;
+  background-color: white;
+  border: solid, 2px, black;
+}
+#Heat{
+height:300px; 
+background-color: orange;
+border-top: solid, 2px, black;
+text-align: center;
+align-content: end;
+}
+.BGHeat{
+    height:300px;
+    width:50px;
+    background-color: orangered;
+    border: solid, 2px, black;
+}
+#Corrupt{
+height:210px; 
+background-color: darkcyan;  
+text-align: center;
+align-content: end;
+border-top: solid, 2px, black;
+}
+.BGCurrupt{
+    height:210px;
+    width:50px;
+    background-color: cyan;
+    border: solid, 2px, black;
+}
+.CaPaH{
+    display:flex;
+}
+.sideinfo{
+    display:flex;
+    align-items: end;
+    padding-bottom: 50px;
+}
+.CurruptMeter{
+    display:flex;
+    align-items: end;
+    padding-bottom: 50px;
+}
+.stats {
+  width: 300px;
+  border: 2px solid #000000;
+  background-color: lime;
+}
+.statinfo{
+    padding: 10px;
+}
+.info{
+    border-top: 2px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.songselect{
+    border: 2px solid #000000;
+    background-color: lime;
+    text-align: center;
+}

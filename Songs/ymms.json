@@ -1,0 +1,263 @@
+{
+	"song": {
+		"speed": 2.1,
+		"stage": "stage",
+		"player1": "bf",
+		"player2": "dad",
+		"events": [],
+		"notes": [
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [
+					[
+						944.88188976378,
+						2,
+						0
+					],
+					[
+						1299.2125984252,
+						3,
+						0
+					],
+					[
+						1535.43307086614,
+						1,
+						118.110236220472
+					],
+					[
+						1771.65354330709,
+						3,
+						118.110236220472
+					]
+				],
+				"bpm": 150,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [
+					[
+						2300.1968503937,
+						1,
+						0
+					],
+					[
+						2542.32283464567,
+						0,
+						118.110236220472
+					],
+					[
+						2834.64566929134,
+						2,
+						118.110236220472
+					],
+					[
+						3188.97637795276,
+						3,
+						0
+					],
+					[
+						3425.1968503937,
+						0,
+						118.110236220472
+					]
+				],
+				"bpm": 150,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [
+					[
+						4015.74803149606,
+						3,
+						0
+					],
+					[
+						3779.52755905512,
+						0,
+						0
+					],
+					[
+						3779.52755905512,
+						1,
+						0
+					],
+					[
+						3779.52755905512,
+						2,
+						0
+					],
+					[
+						3779.52755905512,
+						3,
+						0
+					],
+					[
+						4015.74803149606,
+						2,
+						0
+					],
+					[
+						4370.07874015748,
+						1,
+						0
+					],
+					[
+						4370.07874015748,
+						0,
+						0
+					],
+					[
+						4724.4094488189,
+						0,
+						354.330708661417
+					],
+					[
+						4724.4094488189,
+						3,
+						354.330708661417
+					],
+					[
+						5196.85039370079,
+						2,
+						0
+					],
+					[
+						5433.07086614173,
+						0,
+						118.110236220472
+					]
+				],
+				"bpm": 150,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [
+					[
+						5669.29133858268,
+						2,
+						118.110236220472
+					],
+					[
+						6141.73228346457,
+						3,
+						0
+					],
+					[
+						6377.95275590551,
+						0,
+						0
+					],
+					[
+						6614.17322834646,
+						2,
+						118.110236220472
+					],
+					[
+						6614.17322834646,
+						1,
+						118.110236220472
+					],
+					[
+						7204.72440944882,
+						2,
+						118.110236220472
+					],
+					[
+						7440.94488188976,
+						1,
+						0
+					]
+				],
+				"bpm": 150,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [
+					[
+						7677.16535433071,
+						3,
+						118.110236220472
+					],
+					[
+						7559.05511811024,
+						2,
+						0
+					],
+					[
+						8031.49606299213,
+						0,
+						118.110236220472
+					],
+					[
+						8267.71653543307,
+						3,
+						0
+					]
+				],
+				"bpm": 150,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 150,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 150,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 127,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			}
+		],
+		"splashSkin": "noteSplashes",
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 127,
+		"arrowSkin": "",
+		"needsVoices": true,
+		"song": "ymms"
+	}
+}
